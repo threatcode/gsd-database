@@ -1,0 +1,116 @@
+{
+    "GSD": {
+        "alias": "CVE-2022-3101",
+        "id": "GSD-2022-3101",
+        "references": [
+            "https://access.redhat.com/errata/RHSA-2022:6969"
+        ]
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "ASSIGNER": "secalert@redhat.com",
+                "ID": "CVE-2022-3101",
+                "STATE": "PUBLIC"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "tripleo-ansible",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "version_value": "unknown"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "n/a"
+                        }
+                    ]
+                }
+            },
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "A flaw was found in tripleo-ansible. Due to an insecure default configuration, the permissions of a sensitive file are not sufficiently restricted. This flaw allows a local attacker to use brute force to explore the relevant directory and discover the file, leading to information disclosure of important configuration details from the OpenStack deployment."
+                    }
+                ]
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "lang": "eng",
+                                "value": "CWE-22->CWE-276->CWE-732"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "https://access.redhat.com/security/cve/CVE-2022-3101",
+                        "refsource": "MISC",
+                        "url": "https://access.redhat.com/security/cve/CVE-2022-3101"
+                    }
+                ]
+            }
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": []
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "secalert@redhat.com",
+                    "ID": "CVE-2022-3101"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "A flaw was found in tripleo-ansible. Due to an insecure default configuration, the permissions of a sensitive file are not sufficiently restricted. This flaw allows a local attacker to use brute force to explore the relevant directory and discover the file, leading to information disclosure of important configuration details from the OpenStack deployment."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": []
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://access.redhat.com/security/cve/CVE-2022-3101",
+                            "refsource": "MISC",
+                            "tags": [],
+                            "url": "https://access.redhat.com/security/cve/CVE-2022-3101"
+                        }
+                    ]
+                }
+            },
+            "impact": {},
+            "lastModifiedDate": "2023-03-24T01:57Z",
+            "publishedDate": "2023-03-23T21:15Z"
+        }
+    }
+}

@@ -1,0 +1,145 @@
+{
+    "GSD": {
+        "alias": "CVE-2022-46363",
+        "id": "GSD-2022-46363",
+        "references": [
+            "https://access.redhat.com/errata/RHSA-2023:0483",
+            "https://access.redhat.com/errata/RHSA-2023:0544",
+            "https://access.redhat.com/errata/RHSA-2023:1043",
+            "https://access.redhat.com/errata/RHSA-2023:1044",
+            "https://access.redhat.com/errata/RHSA-2023:1045",
+            "https://access.redhat.com/errata/RHSA-2023:1047",
+            "https://access.redhat.com/errata/RHSA-2023:1049"
+        ]
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "ASSIGNER": "security@apache.org",
+                "ID": "CVE-2022-46363",
+                "STATE": "PUBLIC"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "Apache CXF",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "version_affected": "=",
+                                                    "version_value": "3.5"
+                                                },
+                                                {
+                                                    "version_affected": "=",
+                                                    "version_value": "3.4"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "Apache Software Foundation"
+                        }
+                    ]
+                }
+            },
+            "credits": [
+                {
+                    "lang": "en",
+                    "value": "thanat0s from Beijin Qihoo 360 adlab"
+                }
+            ],
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "A vulnerability in Apache CXF before versions 3.5.5 and 3.4.10 allows an attacker to perform a remote directory listing or code exfiltration. The vulnerability only applies when the CXFServlet is configured with both the static-resources-list and redirect-query-check attributes. These attributes are not supposed to be used together, and so the vulnerability can only arise if the CXF service is misconfigured."
+                    }
+                ]
+            },
+            "generator": {
+                "engine": "Vulnogram 0.1.0-dev"
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "cweId": "CWE-20",
+                                "lang": "eng",
+                                "value": "CWE-20 Improper Input Validation"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "https://lists.apache.org/thread/pdzo1qgyplf4y523tnnzrcm7hoco3l8c",
+                        "refsource": "MISC",
+                        "url": "https://lists.apache.org/thread/pdzo1qgyplf4y523tnnzrcm7hoco3l8c"
+                    }
+                ]
+            },
+            "source": {
+                "discovery": "EXTERNAL"
+            }
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": []
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "security@apache.org",
+                    "ID": "CVE-2022-46363"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "A vulnerability in Apache CXF before versions 3.5.5 and 3.4.10 allows an attacker to perform a remote directory listing or code exfiltration. The vulnerability only applies when the CXFServlet is configured with both the static-resources-list and redirect-query-check attributes. These attributes are not supposed to be used together, and so the vulnerability can only arise if the CXF service is misconfigured."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": [
+                                {
+                                    "lang": "en",
+                                    "value": "CWE-20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://lists.apache.org/thread/pdzo1qgyplf4y523tnnzrcm7hoco3l8c",
+                            "refsource": "MISC",
+                            "tags": [],
+                            "url": "https://lists.apache.org/thread/pdzo1qgyplf4y523tnnzrcm7hoco3l8c"
+                        }
+                    ]
+                }
+            },
+            "impact": {},
+            "lastModifiedDate": "2022-12-13T15:15Z",
+            "publishedDate": "2022-12-13T15:15Z"
+        }
+    }
+}

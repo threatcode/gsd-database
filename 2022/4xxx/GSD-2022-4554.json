@@ -1,0 +1,200 @@
+{
+    "GSD": {
+        "alias": "CVE-2022-4554",
+        "description": "B2B Customer Ordering System developed by ID Software Project and Consultancy Services before version 1.0.0.347 has an authenticated Reflected XSS vulnerability. This has been fixed in the version 1.0.0.347.",
+        "id": "GSD-2022-4554"
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "AKA": "",
+                "ASSIGNER": "cve@usom.gov.tr",
+                "DATE_PUBLIC": "2023-01-24T07:30:00.000Z",
+                "ID": "CVE-2022-4554",
+                "STATE": "PUBLIC",
+                "TITLE": "Reflected XSS B2B Dealer Ordering System"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "B2B Customer Ordering System",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "platform": "",
+                                                    "version_affected": "<",
+                                                    "version_name": "",
+                                                    "version_value": "1.0.0.347"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "ID Software Project and Consultancy Services"
+                        }
+                    ]
+                }
+            },
+            "configuration": [],
+            "credit": [
+                {
+                    "lang": "eng",
+                    "value": "Alican \u00d6zdemir"
+                }
+            ],
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "B2B Customer Ordering System developed by ID Software Project and Consultancy Services before version 1.0.0.347 has an authenticated Reflected XSS vulnerability. This has been fixed in the version 1.0.0.347."
+                    }
+                ]
+            },
+            "exploit": [],
+            "generator": {
+                "engine": "Vulnogram 0.0.9"
+            },
+            "impact": {
+                "cvss": {
+                    "attackComplexity": "LOW",
+                    "attackVector": "NETWORK",
+                    "availabilityImpact": "NONE",
+                    "baseScore": 4.8,
+                    "baseSeverity": "MEDIUM",
+                    "confidentialityImpact": "LOW",
+                    "integrityImpact": "LOW",
+                    "privilegesRequired": "HIGH",
+                    "scope": "CHANGED",
+                    "userInteraction": "REQUIRED",
+                    "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                    "version": "3.1"
+                }
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "lang": "eng",
+                                "value": "CWE-79: Reflected XSS"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "https://www.usom.gov.tr/bildirim/tr-23-0022",
+                        "refsource": "CONFIRM",
+                        "url": "https://www.usom.gov.tr/bildirim/tr-23-0022"
+                    }
+                ]
+            },
+            "solution": [
+                {
+                    "lang": "eng",
+                    "value": "B2B Customer Ordering System product should be updated to the 1.0.0.347 version provided by the vendor."
+                }
+            ],
+            "source": {
+                "advisory": "TR-23-0022",
+                "defect": [
+                    "TR-23-0022"
+                ],
+                "discovery": "EXTERNAL"
+            },
+            "work_around": []
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": [
+                    {
+                        "children": [],
+                        "cpe_match": [
+                            {
+                                "cpe23Uri": "cpe:2.3:a:idyazilim:b2b_dealer_order_system:*:*:*:*:*:*:*:*",
+                                "cpe_name": [],
+                                "versionEndExcluding": "1.0.0.347",
+                                "vulnerable": true
+                            }
+                        ],
+                        "operator": "OR"
+                    }
+                ]
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "cve@usom.gov.tr",
+                    "ID": "CVE-2022-4554"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "B2B Customer Ordering System developed by ID Software Project and Consultancy Services before version 1.0.0.347 has an authenticated Reflected XSS vulnerability. This has been fixed in the version 1.0.0.347."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": [
+                                {
+                                    "lang": "en",
+                                    "value": "CWE-79"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://www.usom.gov.tr/bildirim/tr-23-0022",
+                            "refsource": "CONFIRM",
+                            "tags": [
+                                "Third Party Advisory"
+                            ],
+                            "url": "https://www.usom.gov.tr/bildirim/tr-23-0022"
+                        }
+                    ]
+                }
+            },
+            "impact": {
+                "baseMetricV3": {
+                    "cvssV3": {
+                        "attackComplexity": "LOW",
+                        "attackVector": "NETWORK",
+                        "availabilityImpact": "NONE",
+                        "baseScore": 5.4,
+                        "baseSeverity": "MEDIUM",
+                        "confidentialityImpact": "LOW",
+                        "integrityImpact": "LOW",
+                        "privilegesRequired": "LOW",
+                        "scope": "CHANGED",
+                        "userInteraction": "REQUIRED",
+                        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                        "version": "3.1"
+                    },
+                    "exploitabilityScore": 2.3,
+                    "impactScore": 2.7
+                }
+            },
+            "lastModifiedDate": "2023-01-31T15:57Z",
+            "publishedDate": "2023-01-24T09:15Z"
+        }
+    }
+}

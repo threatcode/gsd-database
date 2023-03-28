@@ -1,0 +1,259 @@
+{
+    "GSD": {
+        "alias": "CVE-2019-10330",
+        "description": "Jenkins Gitea Plugin 1.1.1 and earlier did not implement trusted revisions, allowing attackers without commit access to the Git repo to change Jenkinsfiles even if Jenkins is configured to consider them to be untrusted.",
+        "id": "GSD-2019-10330"
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "ASSIGNER": "jenkinsci-cert@googlegroups.com",
+                "ID": "CVE-2019-10330",
+                "STATE": "PUBLIC"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "Jenkins Gitea Plugin",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "version_value": "1.1.1 and earlier"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "Jenkins project"
+                        }
+                    ]
+                }
+            },
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "Jenkins Gitea Plugin 1.1.1 and earlier did not implement trusted revisions, allowing attackers without commit access to the Git repo to change Jenkinsfiles even if Jenkins is configured to consider them to be untrusted."
+                    }
+                ]
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "lang": "eng",
+                                "value": "CWE-693"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "[oss-security] 20190531 Multiple vulnerabilities in Jenkins plugins",
+                        "refsource": "MLIST",
+                        "url": "http://www.openwall.com/lists/oss-security/2019/05/31/2"
+                    },
+                    {
+                        "name": "108540",
+                        "refsource": "BID",
+                        "url": "http://www.securityfocus.com/bid/108540"
+                    },
+                    {
+                        "name": "https://jenkins.io/security/advisory/2019-05-31/#SECURITY-1046",
+                        "refsource": "CONFIRM",
+                        "url": "https://jenkins.io/security/advisory/2019-05-31/#SECURITY-1046"
+                    }
+                ]
+            }
+        },
+        "gitlab.com": {
+            "advisories": [
+                {
+                    "_git_import_path": "go/github.com/go-gitea/gitea",
+                    "affected_range": "<=v1.1.1",
+                    "affected_versions": "All versions up to 1.1.1",
+                    "cvss_v2": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                    "cvss_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                    "cwe_ids": [
+                        "CWE-1035",
+                        "CWE-862",
+                        "CWE-937"
+                    ],
+                    "date": "2019-06-03",
+                    "description": "Jenkins Gitea Plugin does not implement trusted revisions, allowing attackers without commit access to the Git repo to change Jenkinsfiles even if Jenkins is configured to consider them to be untrusted.",
+                    "fixed_versions": [
+                        "v1.1.2"
+                    ],
+                    "identifier": "CVE-2019-10330",
+                    "identifiers": [
+                        "CVE-2019-10330"
+                    ],
+                    "not_impacted": "All versions after 1.1.1",
+                    "package_slug": "go/github.com/go-gitea/gitea",
+                    "pubdate": "2019-05-31",
+                    "solution": "Upgrade to version 1.1.2 or above.",
+                    "title": "Improper Access Control",
+                    "urls": [
+                        "https://nvd.nist.gov/vuln/detail/CVE-2019-10330",
+                        "https://jenkins.io/security/advisory/2019-05-31/#SECURITY-1046"
+                    ],
+                    "uuid": "139f53a1-c21d-4748-8a9e-45f8c17f8b05",
+                    "versions": [
+                        {
+                            "commit": {
+                                "sha": "2dd9032f0e6d35ab97680605f7c53ed001e42908",
+                                "tags": [
+                                    "v1.1.1"
+                                ],
+                                "timestamp": "20170504182926"
+                            },
+                            "number": "v1.1.1"
+                        },
+                        {
+                            "commit": {
+                                "sha": "bbe6aa349ff0c87e5fefe3dfbc6e16c7c1cb2795",
+                                "tags": [
+                                    "v1.1.2"
+                                ],
+                                "timestamp": "20170529131011"
+                            },
+                            "number": "v1.1.2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": [
+                    {
+                        "children": [],
+                        "cpe_match": [
+                            {
+                                "cpe23Uri": "cpe:2.3:a:gitea:gitea:*:*:*:*:*:jenkins:*:*",
+                                "cpe_name": [],
+                                "versionEndIncluding": "1.1.1",
+                                "vulnerable": true
+                            }
+                        ],
+                        "operator": "OR"
+                    }
+                ]
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "jenkinsci-cert@googlegroups.com",
+                    "ID": "CVE-2019-10330"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "Jenkins Gitea Plugin 1.1.1 and earlier did not implement trusted revisions, allowing attackers without commit access to the Git repo to change Jenkinsfiles even if Jenkins is configured to consider them to be untrusted."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": [
+                                {
+                                    "lang": "en",
+                                    "value": "CWE-862"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://jenkins.io/security/advisory/2019-05-31/#SECURITY-1046",
+                            "refsource": "MISC",
+                            "tags": [
+                                "Vendor Advisory"
+                            ],
+                            "url": "https://jenkins.io/security/advisory/2019-05-31/#SECURITY-1046"
+                        },
+                        {
+                            "name": "[oss-security] 20190531 Multiple vulnerabilities in Jenkins plugins",
+                            "refsource": "MLIST",
+                            "tags": [
+                                "Mailing List",
+                                "Third Party Advisory"
+                            ],
+                            "url": "http://www.openwall.com/lists/oss-security/2019/05/31/2"
+                        },
+                        {
+                            "name": "108540",
+                            "refsource": "BID",
+                            "tags": [
+                                "Third Party Advisory",
+                                "VDB Entry"
+                            ],
+                            "url": "http://www.securityfocus.com/bid/108540"
+                        }
+                    ]
+                }
+            },
+            "impact": {
+                "baseMetricV2": {
+                    "acInsufInfo": false,
+                    "cvssV2": {
+                        "accessComplexity": "LOW",
+                        "accessVector": "NETWORK",
+                        "authentication": "NONE",
+                        "availabilityImpact": "NONE",
+                        "baseScore": 5.0,
+                        "confidentialityImpact": "NONE",
+                        "integrityImpact": "PARTIAL",
+                        "vectorString": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                        "version": "2.0"
+                    },
+                    "exploitabilityScore": 10.0,
+                    "impactScore": 2.9,
+                    "obtainAllPrivilege": false,
+                    "obtainOtherPrivilege": false,
+                    "obtainUserPrivilege": false,
+                    "severity": "MEDIUM",
+                    "userInteractionRequired": false
+                },
+                "baseMetricV3": {
+                    "cvssV3": {
+                        "attackComplexity": "LOW",
+                        "attackVector": "NETWORK",
+                        "availabilityImpact": "NONE",
+                        "baseScore": 7.5,
+                        "baseSeverity": "HIGH",
+                        "confidentialityImpact": "NONE",
+                        "integrityImpact": "HIGH",
+                        "privilegesRequired": "NONE",
+                        "scope": "UNCHANGED",
+                        "userInteraction": "NONE",
+                        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                        "version": "3.1"
+                    },
+                    "exploitabilityScore": 3.9,
+                    "impactScore": 3.6
+                }
+            },
+            "lastModifiedDate": "2020-10-02T14:35Z",
+            "publishedDate": "2019-05-31T15:29Z"
+        }
+    }
+}

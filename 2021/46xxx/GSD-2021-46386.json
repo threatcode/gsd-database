@@ -1,0 +1,176 @@
+{
+    "GSD": {
+        "alias": "CVE-2021-46386",
+        "description": "https://gitee.com/mingSoft/MCMS MCMS <=5.2.5 is affected by: File Upload. The impact is: execute arbitrary code (remote). The component is: net.mingsoft.basic.action.web.FileAction#upload. The attack vector is: jspx webshell. \u00b6\u00b6 MCMS has a file upload vulnerability through which attacker can upload a webshell. Successful attacks of this vulnerability can result in takeover of MCMS",
+        "id": "GSD-2021-46386"
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "ASSIGNER": "cve@mitre.org",
+                "ID": "CVE-2021-46386",
+                "STATE": "PUBLIC"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "n/a",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "version_value": "n/a"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "n/a"
+                        }
+                    ]
+                }
+            },
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "File upload vulnerability in mingSoft MCMS through 5.2.5, allows remote attackers to execute arbitrary code via a crafted jspx webshell to net.mingsoft.basic.action.web.FileAction#upload."
+                    }
+                ]
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "lang": "eng",
+                                "value": "n/a"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "https://gitee.com/mingSoft/MCMS/issues/I4R0GW",
+                        "refsource": "MISC",
+                        "url": "https://gitee.com/mingSoft/MCMS/issues/I4R0GW"
+                    }
+                ]
+            }
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": [
+                    {
+                        "children": [],
+                        "cpe_match": [
+                            {
+                                "cpe23Uri": "cpe:2.3:a:mingsoft:mcms:*:*:*:*:*:*:*:*",
+                                "cpe_name": [],
+                                "versionEndIncluding": "5.2.5",
+                                "vulnerable": true
+                            }
+                        ],
+                        "operator": "OR"
+                    }
+                ]
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "cve@mitre.org",
+                    "ID": "CVE-2021-46386"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "File upload vulnerability in mingSoft MCMS through 5.2.5, allows remote attackers to execute arbitrary code via a crafted jspx webshell to net.mingsoft.basic.action.web.FileAction#upload."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": [
+                                {
+                                    "lang": "en",
+                                    "value": "CWE-434"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://gitee.com/mingSoft/MCMS/issues/I4R0GW",
+                            "refsource": "MISC",
+                            "tags": [
+                                "Exploit",
+                                "Issue Tracking",
+                                "Third Party Advisory"
+                            ],
+                            "url": "https://gitee.com/mingSoft/MCMS/issues/I4R0GW"
+                        }
+                    ]
+                }
+            },
+            "impact": {
+                "baseMetricV2": {
+                    "acInsufInfo": false,
+                    "cvssV2": {
+                        "accessComplexity": "LOW",
+                        "accessVector": "NETWORK",
+                        "authentication": "NONE",
+                        "availabilityImpact": "PARTIAL",
+                        "baseScore": 7.5,
+                        "confidentialityImpact": "PARTIAL",
+                        "integrityImpact": "PARTIAL",
+                        "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                        "version": "2.0"
+                    },
+                    "exploitabilityScore": 10.0,
+                    "impactScore": 6.4,
+                    "obtainAllPrivilege": false,
+                    "obtainOtherPrivilege": false,
+                    "obtainUserPrivilege": false,
+                    "severity": "HIGH",
+                    "userInteractionRequired": false
+                },
+                "baseMetricV3": {
+                    "cvssV3": {
+                        "attackComplexity": "LOW",
+                        "attackVector": "NETWORK",
+                        "availabilityImpact": "HIGH",
+                        "baseScore": 9.8,
+                        "baseSeverity": "CRITICAL",
+                        "confidentialityImpact": "HIGH",
+                        "integrityImpact": "HIGH",
+                        "privilegesRequired": "NONE",
+                        "scope": "UNCHANGED",
+                        "userInteraction": "NONE",
+                        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                        "version": "3.1"
+                    },
+                    "exploitabilityScore": 3.9,
+                    "impactScore": 5.9
+                }
+            },
+            "lastModifiedDate": "2022-11-21T19:45Z",
+            "publishedDate": "2022-01-26T17:15Z"
+        }
+    }
+}

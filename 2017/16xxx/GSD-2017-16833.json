@@ -1,0 +1,207 @@
+{
+    "GSD": {
+        "alias": "CVE-2017-16833",
+        "description": "Stored cross-site scripting (XSS) vulnerability in Gemirro before 0.16.0 allows attackers to inject arbitrary web script via a crafted javascript: URL in the \"homepage\" value of a \".gemspec\" file.",
+        "id": "GSD-2017-16833"
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "ASSIGNER": "cve@mitre.org",
+                "ID": "CVE-2017-16833",
+                "STATE": "PUBLIC"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "n/a",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "version_value": "n/a"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "n/a"
+                        }
+                    ]
+                }
+            },
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "Stored cross-site scripting (XSS) vulnerability in Gemirro before 0.16.0 allows attackers to inject arbitrary web script via a crafted javascript: URL in the \"homepage\" value of a \".gemspec\" file."
+                    }
+                ]
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "lang": "eng",
+                                "value": "n/a"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "https://github.com/PierreRambaud/gemirro/commit/9659f9b7ce15a723da8e361bd41b9203b19c97de",
+                        "refsource": "CONFIRM",
+                        "url": "https://github.com/PierreRambaud/gemirro/commit/9659f9b7ce15a723da8e361bd41b9203b19c97de"
+                    }
+                ]
+            }
+        },
+        "gitlab.com": {
+            "advisories": [
+                {
+                    "affected_range": "<0.16.0",
+                    "affected_versions": "All versions before 0.16.0",
+                    "cvss_v2": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                    "cvss_v3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                    "cwe_ids": [
+                        "CWE-1035",
+                        "CWE-79",
+                        "CWE-937"
+                    ],
+                    "date": "2020-03-10",
+                    "description": "A stored cross-site scripting (XSS) vulnerability in Gemirro allows attackers to inject arbitrary web script via a crafted javascript in the URL in the `homepage` value of a `.gemspec` file.",
+                    "fixed_versions": [
+                        "0.16.0"
+                    ],
+                    "identifier": "CVE-2017-16833",
+                    "identifiers": [
+                        "CVE-2017-16833"
+                    ],
+                    "not_impacted": "All versions starting from 0.16.0",
+                    "package_slug": "gem/gemirro",
+                    "pubdate": "2017-11-15",
+                    "solution": "Upgrade to version 0.16.0 or above.",
+                    "title": "Cross-site Scripting",
+                    "urls": [
+                        "https://nvd.nist.gov/vuln/detail/CVE-2017-16833"
+                    ],
+                    "uuid": "b5df2936-43c4-407d-b1f6-03d75ce8d281"
+                }
+            ]
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": [
+                    {
+                        "children": [],
+                        "cpe_match": [
+                            {
+                                "cpe23Uri": "cpe:2.3:a:gemirro_project:gemirro:*:*:*:*:*:ruby:*:*",
+                                "cpe_name": [],
+                                "versionEndExcluding": "0.16.0",
+                                "vulnerable": true
+                            }
+                        ],
+                        "operator": "OR"
+                    }
+                ]
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "cve@mitre.org",
+                    "ID": "CVE-2017-16833"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "Stored cross-site scripting (XSS) vulnerability in Gemirro before 0.16.0 allows attackers to inject arbitrary web script via a crafted javascript: URL in the \"homepage\" value of a \".gemspec\" file."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": [
+                                {
+                                    "lang": "en",
+                                    "value": "CWE-79"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://github.com/PierreRambaud/gemirro/commit/9659f9b7ce15a723da8e361bd41b9203b19c97de",
+                            "refsource": "CONFIRM",
+                            "tags": [
+                                "Third Party Advisory",
+                                "Patch"
+                            ],
+                            "url": "https://github.com/PierreRambaud/gemirro/commit/9659f9b7ce15a723da8e361bd41b9203b19c97de"
+                        }
+                    ]
+                }
+            },
+            "impact": {
+                "baseMetricV2": {
+                    "cvssV2": {
+                        "accessComplexity": "MEDIUM",
+                        "accessVector": "NETWORK",
+                        "authentication": "NONE",
+                        "availabilityImpact": "NONE",
+                        "baseScore": 4.3,
+                        "confidentialityImpact": "NONE",
+                        "integrityImpact": "PARTIAL",
+                        "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                        "version": "2.0"
+                    },
+                    "exploitabilityScore": 8.6,
+                    "impactScore": 2.9,
+                    "obtainAllPrivilege": false,
+                    "obtainOtherPrivilege": false,
+                    "obtainUserPrivilege": false,
+                    "severity": "MEDIUM",
+                    "userInteractionRequired": true
+                },
+                "baseMetricV3": {
+                    "cvssV3": {
+                        "attackComplexity": "LOW",
+                        "attackVector": "NETWORK",
+                        "availabilityImpact": "NONE",
+                        "baseScore": 6.1,
+                        "baseSeverity": "MEDIUM",
+                        "confidentialityImpact": "LOW",
+                        "integrityImpact": "LOW",
+                        "privilegesRequired": "NONE",
+                        "scope": "CHANGED",
+                        "userInteraction": "REQUIRED",
+                        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                        "version": "3.1"
+                    },
+                    "exploitabilityScore": 2.8,
+                    "impactScore": 2.7
+                }
+            },
+            "lastModifiedDate": "2020-03-10T13:11Z",
+            "publishedDate": "2017-11-15T09:29Z"
+        }
+    }
+}

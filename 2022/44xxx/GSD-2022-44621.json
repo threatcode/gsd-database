@@ -1,0 +1,181 @@
+{
+    "GSD": {
+        "alias": "CVE-2022-44621",
+        "description": "Diagnosis Controller miss parameter validation, so user may attacked by command injection via HTTP Request.",
+        "id": "GSD-2022-44621"
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "ASSIGNER": "security@apache.org",
+                "ID": "CVE-2022-44621",
+                "STATE": "PUBLIC"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "Apache Kylin",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "version_affected": "=",
+                                                    "version_value": "Apache Kylin 4 "
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "Apache Software Foundation"
+                        }
+                    ]
+                }
+            },
+            "credits": [
+                {
+                    "lang": "en",
+                    "value": "Messy God <godimessy@gmail.com>"
+                }
+            ],
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "Diagnosis Controller miss parameter validation, so user may attacked by command injection via HTTP Request."
+                    }
+                ]
+            },
+            "generator": {
+                "engine": "Vulnogram 0.1.0-dev"
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "lang": "eng",
+                                "value": "Command injection"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "https://lists.apache.org/thread/7ctchj24dofgsj9g1rg1245cms9myb34",
+                        "refsource": "MISC",
+                        "url": "https://lists.apache.org/thread/7ctchj24dofgsj9g1rg1245cms9myb34"
+                    }
+                ]
+            },
+            "source": {
+                "discovery": "UNKNOWN"
+            },
+            "work_around": [
+                {
+                    "lang": "en",
+                    "supportingMedia": [
+                        {
+                            "base64": false,
+                            "type": "text/html",
+                            "value": "Users of Kylin 2.x &amp; Kylin 3.x &amp; 4.x should upgrade to 4.0.3 or apply patch <a target=\"_blank\" rel=\"nofollow\" href=\"https://github.com/apache/kylin/pull/2011\">https://github.com/apache/kylin/pull/2011</a><br>"
+                        }
+                    ],
+                    "value": "Users of Kylin 2.x & Kylin 3.x & 4.x should upgrade to 4.0.3 or apply patch  https://github.com/apache/kylin/pull/2011 https://github.com/apache/kylin/pull/2011 \n"
+                }
+            ]
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": [
+                    {
+                        "children": [],
+                        "cpe_match": [
+                            {
+                                "cpe23Uri": "cpe:2.3:a:apache:kylin:*:*:*:*:*:*:*:*",
+                                "cpe_name": [],
+                                "versionEndExcluding": "4.0.3",
+                                "vulnerable": true
+                            }
+                        ],
+                        "operator": "OR"
+                    }
+                ]
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "security@apache.org",
+                    "ID": "CVE-2022-44621"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "Diagnosis Controller miss parameter validation, so user may attacked by command injection via HTTP Request."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": [
+                                {
+                                    "lang": "en",
+                                    "value": "CWE-77"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://lists.apache.org/thread/7ctchj24dofgsj9g1rg1245cms9myb34",
+                            "refsource": "MISC",
+                            "tags": [
+                                "Mailing List",
+                                "Patch",
+                                "Vendor Advisory"
+                            ],
+                            "url": "https://lists.apache.org/thread/7ctchj24dofgsj9g1rg1245cms9myb34"
+                        }
+                    ]
+                }
+            },
+            "impact": {
+                "baseMetricV3": {
+                    "cvssV3": {
+                        "attackComplexity": "LOW",
+                        "attackVector": "NETWORK",
+                        "availabilityImpact": "HIGH",
+                        "baseScore": 9.8,
+                        "baseSeverity": "CRITICAL",
+                        "confidentialityImpact": "HIGH",
+                        "integrityImpact": "HIGH",
+                        "privilegesRequired": "NONE",
+                        "scope": "UNCHANGED",
+                        "userInteraction": "NONE",
+                        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                        "version": "3.1"
+                    },
+                    "exploitabilityScore": 3.9,
+                    "impactScore": 5.9
+                }
+            },
+            "lastModifiedDate": "2023-01-09T17:58Z",
+            "publishedDate": "2022-12-30T11:15Z"
+        }
+    }
+}

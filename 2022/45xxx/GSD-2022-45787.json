@@ -1,0 +1,168 @@
+{
+    "GSD": {
+        "alias": "CVE-2022-45787",
+        "description": "Unproper laxist permissions on the temporary files used by MIME4J TempFileStorageProvider may lead to information disclosure to other local users. This issue affects Apache James MIME4J version 0.8.8 and prior versions. We recommend users to upgrade to MIME4j version 0.8.9 or later.",
+        "id": "GSD-2022-45787"
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "ASSIGNER": "security@apache.org",
+                "ID": "CVE-2022-45787",
+                "STATE": "PUBLIC"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "Apache James MIME4J",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "version_affected": "=",
+                                                    "version_value": "0"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "Apache Software Foundation"
+                        }
+                    ]
+                }
+            },
+            "credits": [
+                {
+                    "lang": "en",
+                    "value": "Jonathan Leitschuh"
+                }
+            ],
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "Unproper laxist permissions on the temporary files used by MIME4J TempFileStorageProvider may lead to information disclosure to other local users. This issue affects Apache James MIME4J version 0.8.8 and prior versions. We recommend users to upgrade to MIME4j version 0.8.9 or later."
+                    }
+                ]
+            },
+            "generator": {
+                "engine": "Vulnogram 0.1.0-dev"
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "cweId": "CWE-312",
+                                "lang": "eng",
+                                "value": "CWE-312 Cleartext Storage of Sensitive Information"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "https://lists.apache.org/thread/26s8p9stl1z261c4qw15bsq03tt7t0rj",
+                        "refsource": "MISC",
+                        "url": "https://lists.apache.org/thread/26s8p9stl1z261c4qw15bsq03tt7t0rj"
+                    }
+                ]
+            },
+            "source": {
+                "discovery": "EXTERNAL"
+            }
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": [
+                    {
+                        "children": [],
+                        "cpe_match": [
+                            {
+                                "cpe23Uri": "cpe:2.3:a:apache:james:*:*:*:*:mime4j:*:*:*",
+                                "cpe_name": [],
+                                "versionEndExcluding": "0.8.9",
+                                "vulnerable": true
+                            }
+                        ],
+                        "operator": "OR"
+                    }
+                ]
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "security@apache.org",
+                    "ID": "CVE-2022-45787"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "Unproper laxist permissions on the temporary files used by MIME4J TempFileStorageProvider may lead to information disclosure to other local users. This issue affects Apache James MIME4J version 0.8.8 and prior versions. We recommend users to upgrade to MIME4j version 0.8.9 or later."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": [
+                                {
+                                    "lang": "en",
+                                    "value": "CWE-312"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://lists.apache.org/thread/26s8p9stl1z261c4qw15bsq03tt7t0rj",
+                            "refsource": "MISC",
+                            "tags": [
+                                "Mailing List",
+                                "Vendor Advisory"
+                            ],
+                            "url": "https://lists.apache.org/thread/26s8p9stl1z261c4qw15bsq03tt7t0rj"
+                        }
+                    ]
+                }
+            },
+            "impact": {
+                "baseMetricV3": {
+                    "cvssV3": {
+                        "attackComplexity": "LOW",
+                        "attackVector": "LOCAL",
+                        "availabilityImpact": "NONE",
+                        "baseScore": 5.5,
+                        "baseSeverity": "MEDIUM",
+                        "confidentialityImpact": "HIGH",
+                        "integrityImpact": "NONE",
+                        "privilegesRequired": "LOW",
+                        "scope": "UNCHANGED",
+                        "userInteraction": "NONE",
+                        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                        "version": "3.1"
+                    },
+                    "exploitabilityScore": 1.8,
+                    "impactScore": 3.6
+                }
+            },
+            "lastModifiedDate": "2023-01-18T20:31Z",
+            "publishedDate": "2023-01-06T10:15Z"
+        }
+    }
+}

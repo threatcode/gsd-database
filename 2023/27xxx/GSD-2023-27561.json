@@ -1,0 +1,216 @@
+{
+    "GSD": {
+        "alias": "CVE-2023-27561",
+        "id": "GSD-2023-27561",
+        "references": [
+            "https://www.suse.com/security/cve/CVE-2023-27561.html"
+        ]
+    },
+    "namespaces": {
+        "cve.org": {
+            "CVE_data_meta": {
+                "ASSIGNER": "cve@mitre.org",
+                "ID": "CVE-2023-27561",
+                "STATE": "PUBLIC"
+            },
+            "affects": {
+                "vendor": {
+                    "vendor_data": [
+                        {
+                            "product": {
+                                "product_data": [
+                                    {
+                                        "product_name": "n/a",
+                                        "version": {
+                                            "version_data": [
+                                                {
+                                                    "version_value": "n/a"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "vendor_name": "n/a"
+                        }
+                    ]
+                }
+            },
+            "data_format": "MITRE",
+            "data_type": "CVE",
+            "data_version": "4.0",
+            "description": {
+                "description_data": [
+                    {
+                        "lang": "eng",
+                        "value": "runc through 1.1.4 has Incorrect Access Control leading to Escalation of Privileges, related to libcontainer/rootfs_linux.go. To exploit this, an attacker must be able to spawn two containers with custom volume-mount configurations, and be able to run custom images. NOTE: this issue exists because of a CVE-2019-19921 regression."
+                    }
+                ]
+            },
+            "problemtype": {
+                "problemtype_data": [
+                    {
+                        "description": [
+                            {
+                                "lang": "eng",
+                                "value": "n/a"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "references": {
+                "reference_data": [
+                    {
+                        "name": "https://github.com/opencontainers/runc/issues/3751",
+                        "refsource": "MISC",
+                        "url": "https://github.com/opencontainers/runc/issues/3751"
+                    },
+                    {
+                        "name": "https://github.com/opencontainers/runc/issues/2197#issuecomment-1437617334",
+                        "refsource": "MISC",
+                        "url": "https://github.com/opencontainers/runc/issues/2197#issuecomment-1437617334"
+                    },
+                    {
+                        "name": "https://gist.github.com/LiveOverflow/c937820b688922eb127fb760ce06dab9",
+                        "refsource": "MISC",
+                        "url": "https://gist.github.com/LiveOverflow/c937820b688922eb127fb760ce06dab9"
+                    },
+                    {
+                        "name": "[debian-lts-announce] 20230327 [SECURITY] [DLA 3369-1] runc security update",
+                        "refsource": "MLIST",
+                        "url": "https://lists.debian.org/debian-lts-announce/2023/03/msg00023.html"
+                    }
+                ]
+            }
+        },
+        "nvd.nist.gov": {
+            "configurations": {
+                "CVE_data_version": "4.0",
+                "nodes": [
+                    {
+                        "children": [],
+                        "cpe_match": [
+                            {
+                                "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:*:*:*:*:*:*:*:*",
+                                "cpe_name": [],
+                                "versionEndIncluding": "1.1.4",
+                                "vulnerable": true
+                            }
+                        ],
+                        "operator": "OR"
+                    },
+                    {
+                        "children": [],
+                        "cpe_match": [
+                            {
+                                "cpe23Uri": "cpe:2.3:o:redhat:enterprise_linux:8.0:*:*:*:*:*:*:*",
+                                "cpe_name": [],
+                                "vulnerable": true
+                            },
+                            {
+                                "cpe23Uri": "cpe:2.3:a:redhat:openshift_container_platform:4.0:*:*:*:*:*:*:*",
+                                "cpe_name": [],
+                                "vulnerable": true
+                            },
+                            {
+                                "cpe23Uri": "cpe:2.3:o:redhat:enterprise_linux:9.0:*:*:*:*:*:*:*",
+                                "cpe_name": [],
+                                "vulnerable": true
+                            }
+                        ],
+                        "operator": "OR"
+                    }
+                ]
+            },
+            "cve": {
+                "CVE_data_meta": {
+                    "ASSIGNER": "cve@mitre.org",
+                    "ID": "CVE-2023-27561"
+                },
+                "data_format": "MITRE",
+                "data_type": "CVE",
+                "data_version": "4.0",
+                "description": {
+                    "description_data": [
+                        {
+                            "lang": "en",
+                            "value": "runc through 1.1.4 has Incorrect Access Control leading to Escalation of Privileges, related to libcontainer/rootfs_linux.go. To exploit this, an attacker must be able to spawn two containers with custom volume-mount configurations, and be able to run custom images. NOTE: this issue exists because of a CVE-2019-19921 regression."
+                        }
+                    ]
+                },
+                "problemtype": {
+                    "problemtype_data": [
+                        {
+                            "description": [
+                                {
+                                    "lang": "en",
+                                    "value": "CWE-706"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "references": {
+                    "reference_data": [
+                        {
+                            "name": "https://github.com/opencontainers/runc/issues/3751",
+                            "refsource": "MISC",
+                            "tags": [
+                                "Issue Tracking",
+                                "Third Party Advisory"
+                            ],
+                            "url": "https://github.com/opencontainers/runc/issues/3751"
+                        },
+                        {
+                            "name": "https://gist.github.com/LiveOverflow/c937820b688922eb127fb760ce06dab9",
+                            "refsource": "MISC",
+                            "tags": [
+                                "Exploit",
+                                "Third Party Advisory"
+                            ],
+                            "url": "https://gist.github.com/LiveOverflow/c937820b688922eb127fb760ce06dab9"
+                        },
+                        {
+                            "name": "https://github.com/opencontainers/runc/issues/2197#issuecomment-1437617334",
+                            "refsource": "MISC",
+                            "tags": [
+                                "Issue Tracking",
+                                "Third Party Advisory"
+                            ],
+                            "url": "https://github.com/opencontainers/runc/issues/2197#issuecomment-1437617334"
+                        },
+                        {
+                            "name": "[debian-lts-announce] 20230327 [SECURITY] [DLA 3369-1] runc security update",
+                            "refsource": "MLIST",
+                            "tags": [],
+                            "url": "https://lists.debian.org/debian-lts-announce/2023/03/msg00023.html"
+                        }
+                    ]
+                }
+            },
+            "impact": {
+                "baseMetricV3": {
+                    "cvssV3": {
+                        "attackComplexity": "HIGH",
+                        "attackVector": "LOCAL",
+                        "availabilityImpact": "HIGH",
+                        "baseScore": 7.0,
+                        "baseSeverity": "HIGH",
+                        "confidentialityImpact": "HIGH",
+                        "integrityImpact": "HIGH",
+                        "privilegesRequired": "LOW",
+                        "scope": "UNCHANGED",
+                        "userInteraction": "NONE",
+                        "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                        "version": "3.1"
+                    },
+                    "exploitabilityScore": 1.0,
+                    "impactScore": 5.9
+                }
+            },
+            "lastModifiedDate": "2023-03-27T18:15Z",
+            "publishedDate": "2023-03-03T19:15Z"
+        }
+    }
+}
