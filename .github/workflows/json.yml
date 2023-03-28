@@ -5,6 +5,7 @@ on:
     paths:
       - '**.json'
   pull_request:
+    branches: main
 
 jobs:
   test:
